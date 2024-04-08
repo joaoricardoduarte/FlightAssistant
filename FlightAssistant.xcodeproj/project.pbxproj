@@ -15,6 +15,7 @@
 		CF585A8B2BC4500A00A1F086 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A8A2BC4500A00A1F086 /* BaseViewModel.swift */; };
 		CF585A8D2BC4501200A1F086 /* BaseViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A8C2BC4501200A1F086 /* BaseViewState.swift */; };
 		CF585A8F2BC4599400A1F086 /* CustomStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A8E2BC4599400A1F086 /* CustomStateView.swift */; };
+		CF585A922BC45DE800A1F086 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A912BC45DE800A1F086 /* CryptoUtils.swift */; };
 		CF7B03382B7BB5E300E6D44F /* FlightAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03372B7BB5E300E6D44F /* FlightAssistantApp.swift */; };
 		CF7B033A2B7BB5E300E6D44F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03392B7BB5E300E6D44F /* HomeView.swift */; };
 		CF7B033C2B7BB5E400E6D44F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7B033B2B7BB5E400E6D44F /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		CF585A8A2BC4500A00A1F086 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		CF585A8C2BC4501200A1F086 /* BaseViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewState.swift; sourceTree = "<group>"; };
 		CF585A8E2BC4599400A1F086 /* CustomStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStateView.swift; sourceTree = "<group>"; };
+		CF585A912BC45DE800A1F086 /* CryptoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
 		CF7B03342B7BB5E300E6D44F /* FlightAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7B03372B7BB5E300E6D44F /* FlightAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAssistantApp.swift; sourceTree = "<group>"; };
 		CF7B03392B7BB5E300E6D44F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 			path = BaseViewModel;
 			sourceTree = "<group>";
 		};
+		CF585A902BC45DDC00A1F086 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF585A912BC45DE800A1F086 /* CryptoUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		CF7B032B2B7BB5E300E6D44F = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		CF7B03362B7BB5E300E6D44F /* FlightAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				CF585A902BC45DDC00A1F086 /* Utils */,
 				CF585A7C2BBDE6C300A1F086 /* Services */,
 				CF7B03372B7BB5E300E6D44F /* FlightAssistantApp.swift */,
 				CFBE034F2B7E89C3002E8CDF /* Scenes */,
@@ -343,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF7B033A2B7BB5E300E6D44F /* HomeView.swift in Sources */,
+				CF585A922BC45DE800A1F086 /* CryptoUtils.swift in Sources */,
 				CF585A8B2BC4500A00A1F086 /* BaseViewModel.swift in Sources */,
 				CF585A832BBDE88600A1F086 /* FlightStatusEndpoint.swift in Sources */,
 				CF585A882BBEEFC600A1F086 /* HomeViewModel.swift in Sources */,

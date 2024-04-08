@@ -38,7 +38,11 @@ extension FlightStatusEndpoint: Endpoint {
   }
   
   var headers: [String: String]? {
-    return ["X-RapidAPI-Key": "0eafe7757bmsha6828f88e151e68p17ec76jsndb8f43f4ee64",
-            "X-RapidAPI-Host": "aerodatabox.p.rapidapi.com"]
+    let key = "\("vovihwey876v87ew6bvwe786v87we6vbe")\("98687vwe67nv986wev875wbe687vnew")"
+    let apiKey = CryptoUtils.decode("ZKDEdyuFJ6DVwt1woWWLsGSGEtbu4YzjZIxoE8FojvIx+erExrY+n4Z3+yLzkveY10Vgm2XHLA1IhS2MsYPs0Ii7JQxcBwIRntJCIfjL", withKey: key) ?? ""
+    let apiHost = CryptoUtils.decode("cEVtzEA2rihrXjd2LCjbccVT0SpFJBvghUIbvBO1zl4Van6JgIZMCQoBZP52k4boF9EQJmui", withKey: key) ?? ""
+    
+    return ["X-RapidAPI-Key": apiKey,
+            "X-RapidAPI-Host": apiHost]
   }
 }
