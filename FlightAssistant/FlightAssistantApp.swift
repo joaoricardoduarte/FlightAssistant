@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct FlightAssistantApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  
+  // MARK: Stored Properties
+  @StateObject var coordinator = HomeCoordinator()
+  
+  var body: some Scene {
+    WindowGroup {
+      HomeView(coordinator: coordinator)
     }
+  }
 }

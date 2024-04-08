@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF585A7F2BBDE77E00A1F086 /* FlightStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A7E2BBDE77E00A1F086 /* FlightStatusService.swift */; };
+		CF585A812BBDE7F100A1F086 /* FlightStatusResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A802BBDE7F100A1F086 /* FlightStatusResponseModel.swift */; };
+		CF585A832BBDE88600A1F086 /* FlightStatusEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A822BBDE88600A1F086 /* FlightStatusEndpoint.swift */; };
+		CF585A862BBDEF5700A1F086 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = CF585A852BBDEF5700A1F086 /* Network */; };
+		CF585A882BBEEFC600A1F086 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A872BBEEFC600A1F086 /* HomeViewModel.swift */; };
+		CF585A8B2BC4500A00A1F086 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A8A2BC4500A00A1F086 /* BaseViewModel.swift */; };
+		CF585A8D2BC4501200A1F086 /* BaseViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A8C2BC4501200A1F086 /* BaseViewState.swift */; };
+		CF585A8F2BC4599400A1F086 /* CustomStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A8E2BC4599400A1F086 /* CustomStateView.swift */; };
 		CF7B03382B7BB5E300E6D44F /* FlightAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03372B7BB5E300E6D44F /* FlightAssistantApp.swift */; };
-		CF7B033A2B7BB5E300E6D44F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03392B7BB5E300E6D44F /* ContentView.swift */; };
+		CF7B033A2B7BB5E300E6D44F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03392B7BB5E300E6D44F /* HomeView.swift */; };
 		CF7B033C2B7BB5E400E6D44F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7B033B2B7BB5E400E6D44F /* Assets.xcassets */; };
 		CF7B033F2B7BB5E400E6D44F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7B033E2B7BB5E400E6D44F /* Preview Assets.xcassets */; };
 		CF7B03492B7BB5E400E6D44F /* FlightAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03482B7BB5E400E6D44F /* FlightAssistantTests.swift */; };
 		CF7B03532B7BB5E400E6D44F /* FlightAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03522B7BB5E400E6D44F /* FlightAssistantUITests.swift */; };
 		CF7B03552B7BB5E400E6D44F /* FlightAssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03542B7BB5E400E6D44F /* FlightAssistantUITestsLaunchTests.swift */; };
+		CFBE03522B7E8B7D002E8CDF /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE03512B7E8B7D002E8CDF /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF585A732BBDD73D00A1F086 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = SOURCE_ROOT; };
+		CF585A742BBDD74300A1F086 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = SOURCE_ROOT; };
+		CF585A7B2BBDDD1800A1F086 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Network; path = ../../../Documents/Network; sourceTree = "<group>"; };
+		CF585A7E2BBDE77E00A1F086 /* FlightStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusService.swift; sourceTree = "<group>"; };
+		CF585A802BBDE7F100A1F086 /* FlightStatusResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusResponseModel.swift; sourceTree = "<group>"; };
+		CF585A822BBDE88600A1F086 /* FlightStatusEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusEndpoint.swift; sourceTree = "<group>"; };
+		CF585A872BBEEFC600A1F086 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CF585A8A2BC4500A00A1F086 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CF585A8C2BC4501200A1F086 /* BaseViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewState.swift; sourceTree = "<group>"; };
+		CF585A8E2BC4599400A1F086 /* CustomStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStateView.swift; sourceTree = "<group>"; };
 		CF7B03342B7BB5E300E6D44F /* FlightAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7B03372B7BB5E300E6D44F /* FlightAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAssistantApp.swift; sourceTree = "<group>"; };
-		CF7B03392B7BB5E300E6D44F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF7B03392B7BB5E300E6D44F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CF7B033B2B7BB5E400E6D44F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF7B033E2B7BB5E400E6D44F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF7B03442B7BB5E400E6D44F /* FlightAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +63,7 @@
 		CF7B034E2B7BB5E400E6D44F /* FlightAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7B03522B7BB5E400E6D44F /* FlightAssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAssistantUITests.swift; sourceTree = "<group>"; };
 		CF7B03542B7BB5E400E6D44F /* FlightAssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CFBE03512B7E8B7D002E8CDF /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF585A862BBDEF5700A1F086 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,13 +92,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF585A7C2BBDE6C300A1F086 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF585A7D2BBDE6F900A1F086 /* Flight Status */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF585A7D2BBDE6F900A1F086 /* Flight Status */ = {
+			isa = PBXGroup;
+			children = (
+				CF585A7E2BBDE77E00A1F086 /* FlightStatusService.swift */,
+				CF585A802BBDE7F100A1F086 /* FlightStatusResponseModel.swift */,
+				CF585A822BBDE88600A1F086 /* FlightStatusEndpoint.swift */,
+			);
+			path = "Flight Status";
+			sourceTree = "<group>";
+		};
+		CF585A842BBDEF5700A1F086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF585A892BC44FD100A1F086 /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF585A8A2BC4500A00A1F086 /* BaseViewModel.swift */,
+				CF585A8C2BC4501200A1F086 /* BaseViewState.swift */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
 		CF7B032B2B7BB5E300E6D44F = {
 			isa = PBXGroup;
 			children = (
+				CF585A7B2BBDDD1800A1F086 /* Network */,
 				CF7B03362B7BB5E300E6D44F /* FlightAssistant */,
 				CF7B03472B7BB5E400E6D44F /* FlightAssistantTests */,
 				CF7B03512B7BB5E400E6D44F /* FlightAssistantUITests */,
 				CF7B03352B7BB5E300E6D44F /* Products */,
+				CF585A842BBDEF5700A1F086 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +151,10 @@
 		CF7B03362B7BB5E300E6D44F /* FlightAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				CF585A7C2BBDE6C300A1F086 /* Services */,
 				CF7B03372B7BB5E300E6D44F /* FlightAssistantApp.swift */,
-				CF7B03392B7BB5E300E6D44F /* ContentView.swift */,
+				CFBE034F2B7E89C3002E8CDF /* Scenes */,
+				CF585A892BC44FD100A1F086 /* BaseViewModel */,
 				CF7B033B2B7BB5E400E6D44F /* Assets.xcassets */,
 				CF7B033D2B7BB5E400E6D44F /* Preview Content */,
 			);
@@ -121,10 +180,31 @@
 		CF7B03512B7BB5E400E6D44F /* FlightAssistantUITests */ = {
 			isa = PBXGroup;
 			children = (
+				CF585A732BBDD73D00A1F086 /* Network */,
+				CF585A742BBDD74300A1F086 /* Network */,
 				CF7B03522B7BB5E400E6D44F /* FlightAssistantUITests.swift */,
 				CF7B03542B7BB5E400E6D44F /* FlightAssistantUITestsLaunchTests.swift */,
 			);
 			path = FlightAssistantUITests;
+			sourceTree = "<group>";
+		};
+		CFBE034F2B7E89C3002E8CDF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CFBE03502B7E89D6002E8CDF /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CFBE03502B7E89D6002E8CDF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B03392B7BB5E300E6D44F /* HomeView.swift */,
+				CFBE03512B7E8B7D002E8CDF /* HomeCoordinator.swift */,
+				CF585A872BBEEFC600A1F086 /* HomeViewModel.swift */,
+				CF585A8E2BC4599400A1F086 /* CustomStateView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +223,9 @@
 			dependencies = (
 			);
 			name = FlightAssistant;
+			packageProductDependencies = (
+				CF585A852BBDEF5700A1F086 /* Network */,
+			);
 			productName = FlightAssistant;
 			productReference = CF7B03342B7BB5E300E6D44F /* FlightAssistant.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +298,8 @@
 				Base,
 			);
 			mainGroup = CF7B032B2B7BB5E300E6D44F;
+			packageReferences = (
+			);
 			productRefGroup = CF7B03352B7BB5E300E6D44F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +342,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF7B033A2B7BB5E300E6D44F /* ContentView.swift in Sources */,
+				CF7B033A2B7BB5E300E6D44F /* HomeView.swift in Sources */,
+				CF585A8B2BC4500A00A1F086 /* BaseViewModel.swift in Sources */,
+				CF585A832BBDE88600A1F086 /* FlightStatusEndpoint.swift in Sources */,
+				CF585A882BBEEFC600A1F086 /* HomeViewModel.swift in Sources */,
+				CF585A8D2BC4501200A1F086 /* BaseViewState.swift in Sources */,
+				CF585A7F2BBDE77E00A1F086 /* FlightStatusService.swift in Sources */,
 				CF7B03382B7BB5E300E6D44F /* FlightAssistantApp.swift in Sources */,
+				CF585A8F2BC4599400A1F086 /* CustomStateView.swift in Sources */,
+				CFBE03522B7E8B7D002E8CDF /* HomeCoordinator.swift in Sources */,
+				CF585A812BBDE7F100A1F086 /* FlightStatusResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = blackbox.FlightAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,6 +561,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = blackbox.FlightAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,6 +683,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF585A852BBDEF5700A1F086 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF7B032C2B7BB5E300E6D44F /* Project object */;
 }
