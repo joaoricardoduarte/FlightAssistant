@@ -44,7 +44,6 @@ public extension HTTPClient {
         dataAndResponse = try await URLSession.shared.data(for: request, delegate: nil)
       }
       
-      
       guard let response = dataAndResponse?.1 as? HTTPURLResponse else {
         return .failure(.noResponse)
       }
