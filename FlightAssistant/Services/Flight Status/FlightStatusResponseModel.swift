@@ -59,3 +59,8 @@ struct GreatCircleDistance: Codable {
 }
 
 typealias FlightStatusResponseModel = [FlightStatusResponseModelElement]
+
+struct FlightStatusModelAdaptor: Codable {
+  let flightStatusArray: FlightStatusResponseModel
+  let timestamp: Date?
+}

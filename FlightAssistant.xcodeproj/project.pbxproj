@@ -161,11 +161,11 @@
 		CF7B03362B7BB5E300E6D44F /* FlightAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				CF7B03372B7BB5E300E6D44F /* FlightAssistantApp.swift */,
+				CF585A892BC44FD100A1F086 /* BaseViewModel */,
 				CF585A902BC45DDC00A1F086 /* Utils */,
 				CF585A7C2BBDE6C300A1F086 /* Services */,
-				CF7B03372B7BB5E300E6D44F /* FlightAssistantApp.swift */,
 				CFBE034F2B7E89C3002E8CDF /* Scenes */,
-				CF585A892BC44FD100A1F086 /* BaseViewModel */,
 				CF7B033B2B7BB5E400E6D44F /* Assets.xcassets */,
 				CF7B033D2B7BB5E400E6D44F /* Preview Content */,
 			);
