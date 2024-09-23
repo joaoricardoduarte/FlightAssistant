@@ -43,6 +43,9 @@ extension FlightStatusEndpoint: Endpoint {
     let apiHost = CryptoUtils.decode("cEVtzEA2rihrXjd2LCjbccVT0SpFJBvghUIbvBO1zl4Van6JgIZMCQoBZP52k4boF9EQJmui", withKey: key) ?? ""
     
     return ["X-RapidAPI-Key": apiKey,
-            "X-RapidAPI-Host": apiHost]
+            "X-RapidAPI-Host": apiHost,
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "x-rapidapi-ua": "RapidAPI-Playground"]
   }
 }

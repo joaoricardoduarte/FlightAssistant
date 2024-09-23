@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct FlightStatusResponseModelElement: Codable, Identifiable {
-  var id = UUID()
+struct FlightStatusResponseModelElement: Codable {
+  //var id = UUID()
   let greatCircleDistance: GreatCircleDistance
   let departure, arrival: Arrival
   let number, lastUpdatedUTC, status, codeshareStatus: String
@@ -24,8 +24,8 @@ struct FlightStatusResponseModelElement: Codable, Identifiable {
   }
 }
 
-struct Aircraft: Codable, Identifiable {
-  var id = UUID()
+struct Aircraft: Codable {
+  //var id = UUID()
   let model: String
   let image: PlaneImage
   
@@ -34,8 +34,8 @@ struct Aircraft: Codable, Identifiable {
   }
 }
 
-class PlaneImage: Codable, Identifiable {
-  var id = UUID()
+class PlaneImage: Codable {
+  //var id = UUID()
   @State var url: String
   let webURL: String
   let author, myTitle, myDescription, license: String
@@ -73,17 +73,15 @@ class PlaneImage: Codable, Identifiable {
       try container.encode(license, forKey: .license)
       try container.encode(htmlAttributions, forKey: .htmlAttributions)
   }
-  
-  
 }
 
-struct Airline: Codable, Identifiable {
-  var id = UUID()
+struct Airline: Codable {
+  //var id = UUID()
   let name, iata, icao: String
 }
 
-struct Arrival: Codable, Identifiable {
-  var id = UUID()
+struct Arrival: Codable {
+  //var id = UUID()
   let airport: Airport
   let scheduledTime: EdTime
   let terminal: String
@@ -100,8 +98,8 @@ struct Arrival: Codable, Identifiable {
   }
 }
 
-struct Airport: Codable, Identifiable {
-  var id = UUID()
+struct Airport: Codable {
+  //var id = UUID()
   let icao, iata, name, shortName: String
   let municipalityName: String
   let location: Location
@@ -116,8 +114,8 @@ struct Airport: Codable, Identifiable {
   }
 }
 
-struct Location: Codable, Identifiable {
-  var id = UUID()
+struct Location: Codable {
+  //var id = UUID()
   let lat, lon: Double
   
   enum CodingKeys: String, CodingKey {
@@ -126,8 +124,8 @@ struct Location: Codable, Identifiable {
   }
 }
 
-struct EdTime: Codable, Identifiable {
-  var id = UUID()
+struct EdTime: Codable {
+  //var id = UUID()
   let utc, local: String
   
   enum CodingKeys: String, CodingKey {
@@ -136,16 +134,16 @@ struct EdTime: Codable, Identifiable {
   }
 }
 
-struct GreatCircleDistance: Codable, Identifiable {
-  var id = UUID()
+struct GreatCircleDistance: Codable {
+  //var id = UUID()
   let meter, km, mile, nm: Double
   let feet: Double
 }
 
 typealias FlightStatusResponseModel = [FlightStatusResponseModelElement]
 
-struct FlightStatusModelAdaptor: Codable, Identifiable {
-  var id = UUID()
+struct FlightStatusModelAdaptor: Codable {
+  //var id = UUID()
   var flightStatusArray: FlightStatusResponseModel
   let timestamp: Date?
 //  let aircraftURL: URL?

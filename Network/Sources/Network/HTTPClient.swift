@@ -22,7 +22,7 @@ public extension HTTPClient {
     urlComponents.host = endpoint.host
     urlComponents.path = endpoint.path
     urlComponents.queryItems = endpoint.queryItems
-
+    
     guard let url = urlComponents.url else {
       return .failure(.invalidURL)
     }
@@ -52,10 +52,15 @@ public extension HTTPClient {
         guard let data = dataAndResponse?.0 else {
           return .failure(.unknown)
         }
-        guard let decodedResponse = try? JSONDecoder().decode(responseModel, from: data) else {
+        
+        do {
+          let decodedResponse = try JSONDecoder().decode(responseModel, from: data)
+          return .success(decodedResponse)
+        } catch let error as DecodingError {
+          print(error)
           return .failure(.decode)
         }
-        return .success(decodedResponse)
+        
       case 401:
         return .failure(.unauthorized)
       default:

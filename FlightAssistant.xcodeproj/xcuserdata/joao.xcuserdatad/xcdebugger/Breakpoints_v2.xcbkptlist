@@ -14,10 +14,10 @@
             filePath = "FlightAssistant/Scenes/Home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "HistoricDataListView"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

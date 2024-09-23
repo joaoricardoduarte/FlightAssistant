@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF1E9FD32BC6ADDA00641F30 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E9FD22BC6ADDA00641F30 /* AsyncImage.swift */; };
 		CF1E9FD52BC6BFB600641F30 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E9FD42BC6BFB600641F30 /* DateUtils.swift */; };
 		CF585A7F2BBDE77E00A1F086 /* FlightStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A7E2BBDE77E00A1F086 /* FlightStatusService.swift */; };
 		CF585A812BBDE7F100A1F086 /* FlightStatusResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF585A802BBDE7F100A1F086 /* FlightStatusResponseModel.swift */; };
@@ -25,6 +24,7 @@
 		CF7B03492B7BB5E400E6D44F /* FlightAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03482B7BB5E400E6D44F /* FlightAssistantTests.swift */; };
 		CF7B03532B7BB5E400E6D44F /* FlightAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03522B7BB5E400E6D44F /* FlightAssistantUITests.swift */; };
 		CF7B03552B7BB5E400E6D44F /* FlightAssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B03542B7BB5E400E6D44F /* FlightAssistantUITestsLaunchTests.swift */; };
+		CFABB5BC2CA1C08900893524 /* dprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFABB5BB2CA1C08500893524 /* dprint.swift */; };
 		CFBE03522B7E8B7D002E8CDF /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE03512B7E8B7D002E8CDF /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF1E9FD22BC6ADDA00641F30 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		CF1E9FD42BC6BFB600641F30 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		CF585A732BBDD73D00A1F086 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = SOURCE_ROOT; };
 		CF585A742BBDD74300A1F086 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = SOURCE_ROOT; };
@@ -69,6 +68,7 @@
 		CF7B034E2B7BB5E400E6D44F /* FlightAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7B03522B7BB5E400E6D44F /* FlightAssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAssistantUITests.swift; sourceTree = "<group>"; };
 		CF7B03542B7BB5E400E6D44F /* FlightAssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CFABB5BB2CA1C08500893524 /* dprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dprint.swift; sourceTree = "<group>"; };
 		CFBE03512B7E8B7D002E8CDF /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,6 @@
 		CF1E9FD12BC6ADB500641F30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CF1E9FD22BC6ADDA00641F30 /* AsyncImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +142,7 @@
 		CF585A902BC45DDC00A1F086 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CFABB5BB2CA1C08500893524 /* dprint.swift */,
 				CF585A912BC45DE800A1F086 /* CryptoUtils.swift */,
 				CF1E9FD42BC6BFB600641F30 /* DateUtils.swift */,
 			);
@@ -299,7 +299,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					CF7B03332B7BB5E300E6D44F = {
 						CreatedOnToolsVersion = 15.2;
@@ -371,7 +371,6 @@
 				CF585A922BC45DE800A1F086 /* CryptoUtils.swift in Sources */,
 				CF585A8B2BC4500A00A1F086 /* BaseViewModel.swift in Sources */,
 				CF585A832BBDE88600A1F086 /* FlightStatusEndpoint.swift in Sources */,
-				CF1E9FD32BC6ADDA00641F30 /* AsyncImage.swift in Sources */,
 				CF585A882BBEEFC600A1F086 /* HomeViewModel.swift in Sources */,
 				CF585A8D2BC4501200A1F086 /* BaseViewState.swift in Sources */,
 				CF585A7F2BBDE77E00A1F086 /* FlightStatusService.swift in Sources */,
@@ -379,6 +378,7 @@
 				CF1E9FD52BC6BFB600641F30 /* DateUtils.swift in Sources */,
 				CF585A8F2BC4599400A1F086 /* CustomStateView.swift in Sources */,
 				CFBE03522B7E8B7D002E8CDF /* HomeCoordinator.swift in Sources */,
+				CFABB5BC2CA1C08900893524 /* dprint.swift in Sources */,
 				CF585A812BBDE7F100A1F086 /* FlightStatusResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,7 +598,6 @@
 		CF7B035C2B7BB5E400E6D44F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -618,7 +617,6 @@
 		CF7B035D2B7BB5E400E6D44F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -638,7 +636,6 @@
 		CF7B035F2B7BB5E400E6D44F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MSFT7Y444C;
@@ -656,7 +653,6 @@
 		CF7B03602B7BB5E400E6D44F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MSFT7Y444C;
