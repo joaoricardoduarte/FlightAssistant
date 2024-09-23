@@ -11,13 +11,11 @@ class HomeViewModel: BaseViewModel<HomeViewStates>, @unchecked Sendable {
   
   // MARK: Stored Properties
   @Published private(set) var currentFlightStatus: FlightStatusModelAdaptor?
-  @Published private(set) var historicFlightStatusArray: [FlightStatusModelAdaptor] = []
+  @Published var historicFlightStatusArray = [FlightStatusModelAdaptor]()
   
   private let service: FlightStatusServiceable
   var showingAlert: Bool
   let saveURLCodable: URL = .documentsDirectory.appending(component: "flightStatus").appendingPathExtension("json")
-  
-  //private unowned let coordinator: RecipeListCoordinator
   
   // MARK: Initialization
   init(service: FlightStatusServiceable = FlightStatusService()) {
@@ -47,10 +45,11 @@ class HomeViewModel: BaseViewModel<HomeViewStates>, @unchecked Sendable {
       
       switch result {
       case .success(let flightStatus):
-        DispatchQueue.main.async {
-          self.currentFlightStatus = FlightStatusModelAdaptor(flightStatusArray: flightStatus, timestamp: Date())
+        //DispatchQueue.main.async {
+//          self.currentFlightStatus = FlightStatusModelAdaptor(flightStatusArray: flightStatus, timestamp: Date(), aircraftURL: URL(string: flightStatus.first?.aircraft.image.url ?? ""))
+        self.currentFlightStatus = FlightStatusModelAdaptor(flightStatusArray: flightStatus, timestamp: Date())
           self.addFlightStatusToHistoricData(flightStatus: self.currentFlightStatus)
-        }
+        //}
       case .failure(let failure):
         self.changeState(.error(error: failure.customMessage))
         self.showingAlert.toggle()
@@ -66,14 +65,7 @@ class HomeViewModel: BaseViewModel<HomeViewStates>, @unchecked Sendable {
     historicFlightStatusArray.append(status)
     saveHistoricData()
   }
-  
-  
-  // MARK: Methods
-  
-  //    func open(_ recipe: Recipe) {
-  //        self.coordinator.open(recipe)
-  //    }
-  
+
   func loadHistoricData() {
     do {
       let data = try Data(contentsOf: saveURLCodable)

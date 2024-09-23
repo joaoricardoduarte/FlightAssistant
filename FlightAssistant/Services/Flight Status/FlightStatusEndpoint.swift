@@ -33,7 +33,7 @@ extension FlightStatusEndpoint: Endpoint {
   }
   
   var queryItems: [URLQueryItem]? {
-    let queryParams = ["withAircraftImage": "false", "withLocation": "false"]
+    let queryParams = ["withAircraftImage": "true", "withLocation": "false"]
     return queryParams.map { URLQueryItem(name: $0, value: $1) }
   }
   

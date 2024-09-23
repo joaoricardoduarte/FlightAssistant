@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct HomeView: View {
   
@@ -21,9 +22,7 @@ struct HomeView: View {
   }
   
   var body: some View {
-    
-
-    
+        
     switch viewModel.states {
     case .ready:
       VStack {
@@ -36,13 +35,15 @@ struct HomeView: View {
           .textContentType(.emailAddress)
           .padding(.leading, CGFloat(50))
           .padding(.trailing, CGFloat(50))
-        }
+        }.padding(.top, CGFloat(50))
 
           Button(action: {
             viewModel.serviceInitialize(flightNo: flighNoText.uppercased().trimmingCharacters(in: .whitespacesAndNewlines))
           }) {
               Text("Search")
           }
+        Spacer()
+        HistoricDataListView(viewModel: viewModel)
       }
     case .error(error: let error):
       CustomStateView(image: "exclamationmark.transmission",
@@ -70,6 +71,49 @@ struct HomeView: View {
     }
     
     
+  }
+}
+
+struct HistoricDataListView: View {
+  @State var isloading = false
+  @ObservedObject var viewModel: HomeViewModel
+    
+  var body: some View {
+    List(viewModel.historicFlightStatusArray) { statusElement in
+      
+      let flightStatus = statusElement.flightStatusArray.first
+      
+      VStack {
+        HStack {
+//          AsyncImage(url: statusElement.aircraftURL)
+//            .frame(width: 40, height: 40)
+//            .cornerRadius(10)
+          let aa = flightStatus?.aircraft.image.url
+          AsyncImage(url: flightStatus?.aircraft.image.url)
+                      .frame(width: 40, height: 40)
+                      .cornerRadius(10)
+          Text(flightStatus?.number ?? "")
+            .font(.headline)
+          Spacer()
+          Text("\(flightStatus?.departure.airport.iata ?? "") - \(flightStatus?.arrival.airport.iata ?? "")")
+            .font(.headline)
+        }
+        
+        HStack {
+//          let departureDate = Date.dateFromISOString(flightStatus?.departure.scheduledTime)
+          let ff = viewModel.currentFlightStatus?.timestamp
+          let aaa = flightStatus?.aircraft.image.url
+
+//          dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
+//          let departureDate = dateFormatter.date(from: flightStatus?.departure.scheduledTime)
+          Text(flightStatus?.status ?? "")
+            .font(.headline)
+          Text(flightStatus?.status ?? "")
+            .font(.headline)
+          Spacer()
+        }
+      }
+    }
   }
 }
 
